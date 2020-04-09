@@ -16,24 +16,9 @@ apt-get update
 apt-get -y autoremove
 apt-get -y upgrade
 
-# Snap
-apt-get -y install snapd
-
-# Browser of reference
-apt-get -y install firefox
-
-# Backup utility a la Time Machine with support for network folders
-# apt-get -y install deja-dup
-apt-get -y install backintime backintime-gnome nfs-common encfs
-
-# Basic build tools
-apt-get -y install git gcc binutils make xclip
-apt -y install libcurl4-openssl-dev libsqlite3-dev pkg-config
-snap install --classic dmd 
-snap install --classic dub
 
 # Java section (LTS version)
-apt-get -y install openjdk-11-jdk maven
+apt-get -y install git openjdk-11-jdk maven
 
 # Idea & Pycharm
 curl https://download.jetbrains.com/idea/ideaIC-2019.3.4.tar.gz.sha256 --output ideaIC-2019.3.4.tar.gz.sha256 --silent
@@ -63,8 +48,7 @@ cd $ORIG_DIR
 rm -rf ~/.setup-tmp
 
 echo "Verified tarballs for IDEA and PyCharm are in ~/Downloads"
-echo "Reboot the machine and run ./setup-onedrive.sh" 
-echo "Make sure to configure OneDrive Client before using. Check https://1drv.ms/u/s!AvCmrVr47XedkuFCUO-A-I7jubsBPA?e=KsR1ud"
+
 
 # tar xzf ideaIC-2019.3.4.tar.gz -C /opt
 # rm ideaIC-2019*

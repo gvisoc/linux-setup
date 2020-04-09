@@ -1,4 +1,7 @@
-#/bin/bash
+#!/bin/bash
+mkdir -p ~/.setup-tmp
+cd ~/.setup-tmp
+
 # Onedrive client for Linux
 git clone https://github.com/abraunegg/onedrive.git
 if [ $? -eq 0 ]; then

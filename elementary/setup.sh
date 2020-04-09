@@ -17,3 +17,10 @@ apt -y autoremove
 apt -y install tlp tlpui tp-smapi-dkms acpi-call-dkms tlp-rdw
 apt -y install software-properties-common
 apt -y install elementary-tweaks
+
+# Browser of reference
+apt -y install firefox
+
+# Backup utility a la Time Machine with support for network folders
+# apt-get -y install deja-dup
+apt -y install backintime backintime-gnome nfs-common encfs
