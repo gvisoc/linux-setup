@@ -23,8 +23,8 @@ apt-get -y install snapd
 apt-get -y install firefox
 
 # Backup utility a la Time Machine with support for network folders
-apt-get -y install deja-dup
-# apt-get -y install backintime backintime-gnome sshfs
+# apt-get -y install deja-dup
+apt-get -y install backintime backintime-gnome nfs-common encfs
 
 # Basic build tools
 apt-get -y install git gcc binutils make xclip
