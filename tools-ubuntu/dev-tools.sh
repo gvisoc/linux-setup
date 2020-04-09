@@ -18,4 +18,5 @@ apt -y install snapd
 snap refresh
 snap install --classic intellij-idea-community
 snap install --classic pycharm-community
-
+snap install --classic code
+source ~/.profile
