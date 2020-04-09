@@ -1,7 +1,5 @@
 #!/bin/bash
-USER=`id -nu`
 
-ORIG_DIR=`pwd`
 if [ $EUID != 0 ]; then
     sudo "$0" "$@"
     exit $?
@@ -18,6 +16,7 @@ apt -y install git gcc binutils make xclip
 # Snap
 apt -y install snapd
 apt -y install git libcurl4-openssl-dev libsqlite3-dev pkg-config
+snap refresh
 snap install --classic dmd 
 snap install --classic dub
 

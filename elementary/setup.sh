@@ -1,7 +1,5 @@
 #!/bin/bash
-USER=`id -nu`
 
-ORIG_DIR=`pwd`
 if [ $EUID != 0 ]; then
     sudo "$0" "$@"
     exit $?
@@ -14,13 +12,15 @@ apt update
 apt -y upgrade
 apt -y autoremove
 
+# Power management for Thinkpad Laptops
 apt -y install tlp tlpui tp-smapi-dkms acpi-call-dkms tlp-rdw
+
+# Enable dark theme / theming in elementary OS
 apt -y install software-properties-common
 apt -y install elementary-tweaks
 
 # Browser of reference
 apt -y install firefox
 
-# Backup utility a la Time Machine with support for network folders
-# apt-get -y install deja-dup
+# Backup utility a la Time Machine with support for NFS Mounts
 apt -y install backintime backintime-gnome nfs-common encfs

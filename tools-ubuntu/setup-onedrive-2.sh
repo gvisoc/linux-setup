@@ -1,4 +1,5 @@
 #!/bin/bash
+ORIG_DIR=`pwd`
 mkdir -p ~/.setup-tmp
 cd ~/.setup-tmp
 
@@ -14,3 +15,5 @@ if [ $? -eq 0 ]; then
 fi
 echo "Use Onedrive in the command line by executing \"onedrive\""
 echo "Make sure to configure OneDrive Client before using. Check https://1drv.ms/u/s!AvCmrVr47XedkuFCUO-A-I7jubsBPA?e=KsR1ud"
+cd $ORIG_DIR
+rm -rf ~/.setup-tmp
