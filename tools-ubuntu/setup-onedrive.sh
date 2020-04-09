@@ -34,10 +34,12 @@ if [ $? -eq 0 ]; then
     cd ..
     rm -rf onedrive
 fi
-echo ""
-echo "============================================================( DONE )============================================================"
-echo "Use Onedrive in the command line by executing \"onedrive\""
-echo "Make sure to configure OneDrive Client before using. Check https://1drv.ms/u/s!AvCmrVr47XedkuFCUO-A-I7jubsBPA?e=KsR1ud"
-echo "============================================================( DONE )============================================================"
 cd $ORIG_DIR
 rm -rf ~/.setup-tmp 
+echo ""
+echo "====================================( DONE )===================================="
+echo "Use Onedrive in the command line by executing \"onedrive\""
+echo "Make sure to configure OneDrive Client before using."
+echo "     Check https://1drv.ms/u/s!AvCmrVr47XedkuFCUO-A-I7jubsBPA?e=KsR1ud"
+echo "====================================( DONE )===================================="
+
