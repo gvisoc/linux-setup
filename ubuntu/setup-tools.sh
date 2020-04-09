@@ -1,5 +1,6 @@
 #!/bin/bash
 USER=`id -nu`
+
 ORIG_DIR=`pwd`
 if [ $EUID != 0 ]; then
     sudo "$0" "$@"
@@ -21,8 +22,12 @@ apt-get -y install snapd
 # Browser of reference
 apt-get -y install firefox
 
+# Backup utility a la Time Machine with support for network folders
+apt-get -y install deja-dup
+# apt-get -y install backintime backintime-gnome sshfs
+
 # Basic build tools
-apt-get -y install git gcc binutils make
+apt-get -y install git gcc binutils make xclip
 apt -y install libcurl4-openssl-dev libsqlite3-dev pkg-config
 snap install --classic dmd 
 snap install --classic dub
@@ -42,6 +47,7 @@ if [ $? != 0 ]; then
 else 
     mv ideaIC-2019.3.4.tar.gz ~/Downloads/
     chown $USER:$USER ~/Downloads/ideaIC-2019.3.4.tar.gz
+    chmod o+w ~/Downloads/ideaIC-2019.3.4.tar.gz
 fi
 
 shasum -a 256 -c pycharm-community-2019.3.4.tar.gz.sha256
@@ -50,6 +56,7 @@ if [ $? != 0 ]; then
 else
     mv pycharm-community-2019.3.4.tar.gz ~/Downloads/
     chown $USER:$USER ~/Downloads/pycharm-community-2019.3.4.tar.gz
+    chmod o+w ~/Downloads/pycharm-community-2019.3.4.tar.gz
 fi
 
 cd $ORIG_DIR 
