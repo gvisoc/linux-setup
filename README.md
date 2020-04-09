@@ -6,13 +6,24 @@ The following scripts are provided:
     - basic energy management utilities for Lenovo Thinkpad, 
     - Firefox,
     - Back in Time.
-- `tools-ubuntu/setup-onedrive.sh` installs the onedrive client for Linux, that has to be configured later
-- `tools-ubuntu/dev-tools.sh` installs the latest versions of: 
-    - basic binary building tools, 
+- `tools-ubuntu/setup-onedrive.sh` installs:
+    - Git,
+    - Binary build tools,
+    - Dlang compilers,
+    - Dependencies for the onedrive client for Linux, 
+    - builds onedrive client for linux from [its Git Repository](https://github.com/abraunegg/onedrive.git).
+- `tools-ubuntu/java-tools.sh` installs the latest versions of: 
     - Java, Maven, Git 
     - IntelliJ IDEA 
     - Visual Studio Code
+- `tools-ubuntu/python-rools.sh` sets up the following:
+    - Git, Python3, Pip for Python3, and security / keyring access modules
     - PyCharm
+    - updates pip using pip for Python 3, for the current user
+    - venv is included nowadays (Python 3.3+)
+    - Visual Studio Code
+
+Do not worry for repeated tools, if they were already installed they would be updated.
 ## Misc
 The script `misc-tools/get-package-ppa-list.sh` lists all the user-installed packages and their PPA's, useful to update the scripts in this repo.
 ## Configuration files / snippets

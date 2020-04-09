@@ -17,12 +17,8 @@ snap install --classic pycharm-community
 snap install --classic code
 source ~/.profile
 
-# Python 3 virtual environments setup, system-wide
-apt -y install python3
-
-# elementaryOS, as many Ubuntuses, doesn't come with pip3 by default.
-# Install pip for python 3 (whatever the .X it is)
-apt -y install python3-pip python3-gpg python3-keyring python3-dbus python3-secretstorage
+# Python 3 & virtual environments setup, system-wide
+apt -y install git python3 python3-pip python3-gpg python3-keyring python3-dbus python3-secretstorage
 
 # If your system is LTS, which should be for production applications 
 # (as opposed to innovation oriented, or R+D), your Python will be LTS.

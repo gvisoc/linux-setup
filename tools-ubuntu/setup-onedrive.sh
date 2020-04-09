@@ -8,13 +8,10 @@ ORIG_DIR=`pwd`
 mkdir -p ~/.setup-tmp
 cd ~/.setup-tmp
 
-
-apt-get update
-apt-get -y autoremove
-apt-get -y upgrade
+apt update
 
 # Basic build tools
-apt -y install git gcc binutils make xclip
+apt -y install git gcc binutils make
 
 # Snap
 apt -y install snapd
@@ -30,7 +27,7 @@ if [ $? -eq 0 ]; then
     cd onedrive
     ./configure
     make
-    sudo make install
+    make install
     cd ..
     rm -rf onedrive
 fi
@@ -40,6 +37,6 @@ echo ""
 echo "====================================( DONE )===================================="
 echo "Use Onedrive in the command line by executing \"onedrive\""
 echo "Make sure to configure OneDrive Client before using."
-echo "     Check https://1drv.ms/u/s!AvCmrVr47XedkuFCUO-A-I7jubsBPA?e=KsR1ud"
+echo "     Check https://github.com/abraunegg/onedrive/blob/master/docs/USAGE.md"
 echo "====================================( DONE )===================================="
 

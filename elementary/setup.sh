@@ -5,12 +5,13 @@ if [ $EUID != 0 ]; then
     exit $?
 fi
 
-add-apt-repository ppa:linuxuprising/apps
+# PPA for TLPUI
+add-apt-repository ppa:linuxuprising/apps 
+
+# PPA for elementary-tweaks (dark theme & other tweaks)
 add-apt-repository ppa:philip.scott/elementary-tweaks
 
 apt update
-apt -y upgrade
-apt -y autoremove
 
 # Power management for Thinkpad Laptops
 apt -y install tlp tlpui tp-smapi-dkms acpi-call-dkms tlp-rdw
@@ -24,3 +25,6 @@ apt -y install firefox
 
 # Backup utility a la Time Machine with support for NFS Mounts
 apt -y install backintime backintime-gnome nfs-common encfs
+
+# Command line utility to interact with the clipboards
+apt -y install xclip xsel
