@@ -7,11 +7,6 @@ if [ $EUID != 0 ]; then
     exit $?
 fi
 
-
-
-mkdir -p ~/.setup-tmp
-cd ~/.setup-tmp
-
 add-apt-repository ppa:linuxuprising/apps
 add-apt-repository ppa:philip.scott/elementary-tweaks
 
