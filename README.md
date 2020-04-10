@@ -45,7 +45,7 @@ The following scripts are provided:
     - Visual Studio Code
 - `ubuntu/thinkpad/setup-energy.sh`
     - basic energy management utilities for Lenovo Thinkpad under Ubuntu or derivates.
-    - This is **specific for Thinkpad laptops** and comes without warranty (see [LICENSE](LICENSE))
+    - This is **specific for Thinkpad laptops** and comes without warranty (see [LICENSE](LICENSE)).
 - `ubuntu/misc/get-package-ppa-list.sh` lists all the user-installed packages updatedt
 heir PPA's, useful to update the scripts in this repository.
 
