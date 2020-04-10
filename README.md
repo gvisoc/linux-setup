@@ -20,7 +20,7 @@ The following scripts are provided:
     - Theming and tweaking options for elementary OS.
 - `ubuntu/user-misc.sh` -- installs:
     - Firefox,
-    - Back in Time for Gnome, NFS tools and encfs for using Local Encrypted to a NAS NFS Share,
+    - Back in Time for Gnome, NFS tools and `encfs` for using Local Encrypted to a NAS NFS Share,
     - `xclip` and `xsel`.
 - `ubuntu/setup-onedrive.sh` -- installs a Microsoft OneDrive client for Linux:
     - Git,
