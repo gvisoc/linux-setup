@@ -1,43 +1,60 @@
-# Initial Computer Setup
+# Setup Scripts for Ubuntu-ish Linux
+This repository contains all the tools I need to get a usable system for my workflows right after installing an Ubuntu derivated Linux distribution.
+
+## Quick Start
+These scripts will ask for your password in systems with `sudo`, so please review the files before executing them.
+
+Clone the repository and give the scripts the appropriate permissions to execute. You can do it recursively for your own user by executing the following in the terminal:
+
+```
+git clone https://github.com/gvisoc/linux-setup
+cd linux-setup
+find . -name "*.sh" -type f -exec chmod u+x {} \;
+```
+
 ## Scripts
+The goal of the following scripts are to be self contained and independent betwen each other. There is no issue for having scripts that install the same tools, if they were already installed they would be updated.
+
 The following scripts are provided:
-- `elementary/setup.sh` this script is specific for **elementary OS**, and installs some 
-    - Theming and tweaking options for elementary OS, 
-    - basic energy management utilities for Lenovo Thinkpad, 
+- `elementary/tweaks-setup.sh` -- this script is specific for **elementary OS**, and installs: 
+    - Theming and tweaking options for elementary OS.
+- `ubuntu/user-misc.sh` -- installs:
     - Firefox,
     - Back in Time, 
     - `xclip` and `xsel`.
-- `tools-ubuntu/setup-onedrive.sh` installs:
+- `ubuntu/setup-onedrive.sh` -- installs a Microsoft OneDrive client for Linux:
     - Git,
     - Binary build tools,
     - Dlang compilers,
     - Dependencies for the **OneDrive Free Client** for Linux, 
     - builds **OneDrive Free Client** for Linux from [its Git Repository](https://github.com/abraunegg/onedrive.git).
-- `tools-ubuntu/java-tools.sh` installs the latest versions of: 
-    - Java, Maven, Git ,
+- `ubuntu/java-tools.sh` -- installs the latest versions of: 
+    - Git,
+    - OpenJDK Java 11 (LTS version),
+    - Maven,
     - IntelliJ IDEA,
     - Visual Studio Code,
-- `tools-ubuntu/python-rools.sh` sets up the following:
-    - Git, Python3, Pip for Python3, and security / keyring access modules,
+- `ubuntu/python-tools.sh` -- sets up the following:
+    - Git, 
+    - Python 3*, Pip for Python 3, and security / keyring access modules for Python 3,
     - PyCharm,
-    - updates pip using pip for Python 3, for the current user,
-    - venv is included nowadays (Python 3.3+),
+    - updates pip, using pip for Python 3, for the current user,
+    - venv (included nowadays for any Python 3.3+),
     - Visual Studio Code
+- `ubuntu/thinkpad/setup-energy.sh`
+    - basic energy management utilities for Lenovo Thinkpad under Ubuntu or derivates.
+    - This is **specific for Thinkpad laptops** and comes without warranty (see [LICENSE](LICENSE))
+- `ubuntu/misc/get-package-ppa-list.sh` lists all the user-installed packages updatedt
+heir PPA's, useful to update the scripts in this repository.
 
-The goal of the tools scripts are to be self contained and independent betwen each other. There is no issue for having scripts that install the same tools, if they were already installed they would be updated.
+(*): Python 3 is installed via `apt -y install python3`. `python3` is a metapackage that will install the latest Python 3 available in your software sources. For LTS Ubuntu distributions, or forks from Ubuntu LTS like elementary OS, such version is 3.6.x, while the latest stable Python version may be 3.8.x or greater.
 
-## Misc
-The script `misc-tools/get-package-ppa-list.sh` lists all the user-installed packages updatedt
-heir PPA's, useful to update the scripts in this repo.
+
 
 ## Configuration files / snippets
 The file `config/fstab` contains an example of mount line for a properly configured NFS share. This is a useful and simple setup for Back In Time when we don't have a proper SSH server (as in the Synology NAS with modern versions of DiskStation).
 
-Note that the mount point (in the example, `/media/timemachine-gabriel/`) has to belong to the user's group and have the appropriate permissions to be able to be mounted.
+Note that the mount point (in the example, `/media/backup/`) has to belong to the users' group and have the appropriate permissions to be able to be mounted and written.
 
 ## Oh My Zsh
-Aside from the existing scripts, don't forget installing Oh-My-Zsh!
-```
-sudo apt -y install curl git zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+Aside from the existing scripts, consider installing [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh)
