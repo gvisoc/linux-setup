@@ -4,7 +4,7 @@ This repository contains all the tools I need to get a usable system for my work
 ## Quick Start
 These scripts will ask for your password in systems with `sudo`, so please review the files before executing them.
 
-Clone the repository and give the scripts the appropriate permissions to execute. You can do it recursively for your own user by executing the following in the terminal:
+After cloning the repository, you may still have to give the scripts the appropriate permissions to execute. You can do it recursively for your own user by executing the following in the terminal:
 
 ```
 git clone https://github.com/gvisoc/linux-setup
