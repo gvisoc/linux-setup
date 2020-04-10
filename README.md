@@ -1,5 +1,7 @@
-# Setup Scripts for Ubuntu-ish Linux
-This repository contains all the tools I need to get a usable system for my workflows right after installing an Ubuntu derivated Linux distribution.
+# Setup Scripts for Linux
+Install scripts for all the tools I need to get a usable system for my workflows right after installing Linux. 
+
+This repository currently covers Ubuntu-derivated distributions, with some specifics for **elementary OS** and **Thinkpad laptops**.
 
 ## Quick Start
 These scripts will ask for your password in systems with `sudo`, so please review the files before executing them.
