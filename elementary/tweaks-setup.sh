@@ -6,7 +6,7 @@ if [ $EUID != 0 ]; then
 fi
 
 # PPA for elementary-tweaks (dark theme & other tweaks)
-apt -y add-repository ppa:philip.scott/elementary-tweaks
+add-apt-repository ppa:philip.scott/elementary-tweaks
 
 apt update
 
