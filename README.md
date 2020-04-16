@@ -24,7 +24,8 @@ The following scripts are provided:
     - Firefox,
 <<<<<<< HEAD
     - Back in Time, 
-    - `xclip` and `xsel`.
+    - `xclip` and `xsel`,
+    - Notable (note taking app --see https://notable.md)
 =======
     - Back in Time for Gnome, NFS tools and `encfs` for using Local Encrypted to a NAS NFS Share,
     - `xclip` and `xsel`.
