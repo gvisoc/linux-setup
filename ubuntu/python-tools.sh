@@ -7,8 +7,6 @@ if [ $EUID != 0 ]; then
 fi
 
 apt update
-apt -y autoremove
-apt -y upgrade
 apt -y install snapd
 snap refresh
 

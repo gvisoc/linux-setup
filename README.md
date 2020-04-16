@@ -1,10 +1,12 @@
-# Setup Scripts for Ubuntu-ish Linux
-This repository contains all the tools I need to get a usable system for my workflows right after installing an Ubuntu derivated Linux distribution.
+# Setup Scripts for Linux
+Install scripts for all the tools I need to get a usable system for my workflows right after installing Linux. 
+
+This repository currently covers Ubuntu-derivated distributions, with some specifics for **elementary OS** and **Thinkpad laptops**.
 
 ## Quick Start
 These scripts will ask for your password in systems with `sudo`, so please review the files before executing them.
 
-Clone the repository and give the scripts the appropriate permissions to execute. You can do it recursively for your own user by executing the following in the terminal:
+After cloning the repository, you may still have to give the scripts the appropriate permissions to execute. You can do it recursively for your own user by executing the following in the terminal:
 
 ```
 git clone https://github.com/gvisoc/linux-setup
@@ -20,9 +22,13 @@ The following scripts are provided:
     - Theming and tweaking options for elementary OS.
 - `ubuntu/user-misc.sh` -- installs some personal utilities like:
     - Firefox,
+<<<<<<< HEAD
     - Back in Time, 
-    - `xclip` and `xsel`,
-    - Notable (note taking app --see https://notable.md)
+    - `xclip` and `xsel`.
+=======
+    - Back in Time for Gnome, NFS tools and `encfs` for using Local Encrypted to a NAS NFS Share,
+    - `xclip` and `xsel`.
+>>>>>>> e269a9f861daf3b54d3caab7b42297522f0ad598
 - `ubuntu/setup-onedrive.sh` -- installs a Microsoft OneDrive client for Linux:
     - Git,
     - Binary build tools,
@@ -44,7 +50,7 @@ The following scripts are provided:
     - Visual Studio Code
 - `ubuntu/thinkpad/setup-energy.sh`
     - basic energy management utilities for Lenovo Thinkpad under Ubuntu or derivates.
-    - This is **specific for Thinkpad laptops** and comes without warranty (see [LICENSE](LICENSE))
+    - This is **specific for Thinkpad laptops** and comes without warranty (see [LICENSE](LICENSE)).
 - `ubuntu/misc/get-package-ppa-list.sh` lists all the user-installed packages updatedt
 heir PPA's, useful to update the scripts in this repository.
 

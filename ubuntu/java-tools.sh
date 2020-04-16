@@ -5,14 +5,11 @@ if [ $EUID != 0 ]; then
 fi
 
 apt update
-apt -y autoremove
-apt -y upgrade
 apt -y install snapd
 snap refresh
 
 # IntelliJ IDEA Community Edition and Visual Studio Code
 snap install --classic intellij-idea-community
-snap install --classic pycharm-community
 snap install --classic code
 source ~/.profile
 
