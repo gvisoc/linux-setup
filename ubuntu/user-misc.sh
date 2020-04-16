@@ -14,3 +14,6 @@ apt -y install backintime backintime-gnome nfs-common encfs
 
 # Command line utility to interact with the clipboards
 apt -y install xclip xsel
+
+# Notable (https://notable.md) for note-taking using GitHub Markdown
+sudo snap install notable --classic

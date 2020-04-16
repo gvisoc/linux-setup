@@ -18,10 +18,11 @@ The goal of the following scripts are to be self contained and independent betwe
 The following scripts are provided:
 - `elementary/tweaks-setup.sh` -- this script is specific for **elementary OS**, and installs: 
     - Theming and tweaking options for elementary OS.
-- `ubuntu/user-misc.sh` -- installs:
+- `ubuntu/user-misc.sh` -- installs some personal utilities like:
     - Firefox,
     - Back in Time, 
-    - `xclip` and `xsel`.
+    - `xclip` and `xsel`,
+    - Notable (note taking app --see https://notable.md)
 - `ubuntu/setup-onedrive.sh` -- installs a Microsoft OneDrive client for Linux:
     - Git,
     - Binary build tools,
