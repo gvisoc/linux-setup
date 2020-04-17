@@ -35,12 +35,12 @@ The following scripts are provided:
     - Git,
     - OpenJDK Java 11 (LTS version),
     - Maven,
-    - IntelliJ IDEA,
+    - Jetbrains IntelliJ IDEA,
     - Visual Studio Code,
 - `ubuntu/python-tools.sh` -- sets up the following:
     - Git, 
     - Python 3*, Pip for Python 3, and security / keyring access modules for Python 3,
-    - PyCharm,
+    - Jetbrains PyCharm,
     - updates pip, using pip for Python 3, for the current user,
     - venv (included nowadays for any Python 3.3+),
     - Visual Studio Code
