@@ -44,6 +44,10 @@ The following scripts are provided:
     - updates pip, using pip for Python 3, for the current user,
     - venv (included nowadays for any Python 3.3+),
     - Visual Studio Code
+- `ubuntu/rvm-{zsh|bash}.sh` and `ubuntu/jekyll.sh` -- install for your shell (`bash` or `zsh`):
+  - Ruby Version Manager (RVM), 
+  - ruby,
+  - jekyll (a static blogging system I use for https://gvisoc.com) 
 - `ubuntu/thinkpad/setup-energy.sh`
     - basic energy management utilities for Lenovo Thinkpad under Ubuntu or derivates.
     - This is **specific for Thinkpad laptops** and comes without warranty (see [LICENSE](LICENSE)).
