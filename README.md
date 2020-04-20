@@ -3,6 +3,11 @@ Install scripts for all the tools I need to get a usable system for my workflows
 
 This repository currently covers Ubuntu-derivated distributions, with some specifics for **elementary OS** and **Thinkpad laptops**.
 
+## Caveats
+When you install `snapd` on a fresh system that comes without it, you may have to reboot the system for that software installation system to become fully operative. I could not find a scripting solution to apply in the scripts to avoud it. If any script failed due to something related to `snap`, reboot and try again.
+
+Other thing you may want to do is to execute `sudo apt -y install snapd` and reboot the machine before start.
+
 ## Quick Start
 These scripts will ask for your password in systems with `sudo`, so please review the files before executing them.
 

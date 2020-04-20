@@ -7,11 +7,13 @@ if [ $EUID != 0 ]; then
     exit $?
 fi
 
+apt update
+apt -y install software-properties-common
 # PPA for TLPUI
 add-apt-repository ppa:linuxuprising/apps 
 
 apt update
 
-# Power management for Thinkpad Laptops
-apt -y install tlp tlpui tp-smapi-dkms acpi-call-dkms tlp-rdw
+# Power management for my specific Thinkpad Laptop
+apt -y install tlp tlpui acpi-call-dkms tlp-rdw
 

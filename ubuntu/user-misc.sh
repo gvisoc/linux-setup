@@ -6,7 +6,7 @@ fi
 
 apt update
 # Browser of reference
-apt -y install firefox
+apt -y install firefox snapd
 
 # Backup utility a la Time Machine with support for NFS Mounts 
 # and libraries for setting up a Local Encrypted configuration
