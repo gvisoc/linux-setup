@@ -8,12 +8,7 @@ if [ $EUID != 0 ]; then
 fi
 
 apt update
-apt -y install software-properties-common
-# PPA for TLPUI
-add-apt-repository ppa:linuxuprising/apps 
-
-apt update
 
 # Power management for my specific Thinkpad Laptop
-apt -y install tlp tlpui acpi-call-dkms tlp-rdw
+apt -y install tlp acpi-call-dkms tlp-rdw
 
