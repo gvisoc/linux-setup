@@ -26,6 +26,9 @@ apt -y install git python3 python3-pip python3-gpg python3-keyring python3-dbus 
 # Update pip with pip, in the user space. It might be newer than apt's
 sudo -u $USER python3 -m pip install --user --upgrade pip
 
+# Select python3 as the default alias, system-wide
+update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+
 # We are going to use venv, which is included for Python 3.3+. End of the script.
 echo ""
 echo "====================================( DONE )===================================="
