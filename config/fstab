@@ -1,1 +1,1 @@
-192.168.0.14:/path/to/NFS/Share/In/Server    /media/backup/    nfs    user,rw,suid,dev,exec,auto,_netdev    0 0 
+192.168.0.14:/path/to/nfs/share/in/server    /media/backup/    nfs    user,rw,suid,dev,exec,auto,_netdev    0 0 
