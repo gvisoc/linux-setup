@@ -16,7 +16,6 @@ apt -y install git gcc binutils make
 # Snap
 apt -y install snapd
 apt -y install git libcurl4-openssl-dev libsqlite3-dev pkg-config
-snap refresh
 snap install --classic dmd 
 snap install --classic dub
 source ~/.profile

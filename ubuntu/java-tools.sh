@@ -6,7 +6,6 @@ fi
 
 apt update
 apt -y install snapd
-snap refresh
 
 # IntelliJ IDEA Community Edition and Visual Studio Code
 snap install --classic intellij-idea-community

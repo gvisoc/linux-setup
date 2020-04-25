@@ -8,7 +8,6 @@ fi
 
 apt update
 apt -y install snapd
-snap refresh
 
 # IntelliJ PyCharm Community Edition and Visual Studio Code
 snap install --classic pycharm-community
