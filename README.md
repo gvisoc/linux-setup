@@ -49,6 +49,7 @@ The following scripts are provided:
     - updates pip, using pip for Python 3, for the current user,
     - venv (included nowadays for any Python 3.3+),
     - Visual Studio Code
+- `ubuntu/ssd-trim' -- enables trim service for SSD disks, if not enabled before.
 - `ubuntu/thinkpad/setup-energy.sh`
     - basic energy management utilities for Lenovo Thinkpad under Ubuntu or derivates.
     - This is **specific for Thinkpad laptops** and comes without warranty (see [LICENSE](LICENSE)).
