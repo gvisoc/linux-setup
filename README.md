@@ -1,5 +1,5 @@
 # Setup Scripts for Linux
-Install scripts for all the tools I need to get a usable system for my workflows right after installing Linux. 
+Install scripts for some of the tools I need to get a usable system for my workflows right after installing Linux. 
 
 This repository currently covers Ubuntu-derivated distributions, with some specifics for **elementary OS** and **Thinkpad laptops**.
 
